@@ -56,7 +56,7 @@ Please refer to [DevExpress Security Policy](https://github.com/DevExpress/Share
 
 ### Editing Forms
 
-The editing configuration in your code is as follows:
+The `editing` option in the DevExpress DataGrid widget. This configuration determines how users can edit the data in the grid.
 
 ```javascript
 editing: {
@@ -70,7 +70,7 @@ editing: {
 
 ### ReOrder
 
-The rowDragging option in the DevExpress DataGrid widget allows you to enable and configure row reordering within the grid.
+The `rowDragging` option in the DevExpress DataGrid widget allows you to enable and configure row reordering within the grid.
 
 Here's a basic example of how it can be used:
 
