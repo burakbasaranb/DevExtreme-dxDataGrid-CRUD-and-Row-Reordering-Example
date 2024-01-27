@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>DevExtreme Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/event.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/supplemental.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/unresolved.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/23.2.3/css/dx.material.blue.light.css" />
+    <!-- DevExtreme libraries (reference only one of them) -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/23.2.3/js/dx.all.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/23.2.3/js/dx.web.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/23.2.3/js/dx.viz.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="data.js"></script>
+  </head>
+  <body class="dx-viewport">
+    <div class="demo-container">
+        <h5>DevExtreme dxDataGrid CRUD and Row Reordering Example</h5>
+        <ul>
+            <li><b>C</b>reate row</li>
+            <li><b>R</b>eorder rows with drag and drop</li>
+            <li><b>U</b>pdate row</li>
+            <li><b>D</b>elete row</li>
+        </ul>
+        <hr>
+        <p>Please drag a row to change the order</p>
+        <p id="showRowOrdersDiv" style="display: none;" >Rows' sorting IDs have been set: <input type="text" id="setRowOrders" ></p>
+      <div id="gridContainer"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
