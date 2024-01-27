@@ -14,7 +14,7 @@ function get_gridContainer() {
       allowAdding: true,
     },
     showBorders: true,
-    dheight: 440,
+    height: 440,
     dataSource: tasks,
     keyExpr: 'ID',
     scrolling: {
@@ -46,40 +46,40 @@ function get_gridContainer() {
       },
     },
     onEditingStart() {
-      //logEvent("EditingStart"); 
+      //submitEvent("EditingStart"); 
     },
     onInitNewRow() {
-      logEvent("InitNewRow");
+      submitEvent("InitNewRow");
     },
     onRowInserting(e) {
-      logEvent("RowInserting", e);
+      submitEvent("RowInserting", e);
     },
     onRowInserted() {
-      logEvent("RowInserted");
+      submitEvent("RowInserted");
     },
     onRowUpdating(e) {
-      logEvent("RowUpdating", e);
+      submitEvent("RowUpdating", e);
     },
     onRowUpdated() {
-      logEvent("RowUpdated");
+      submitEvent("RowUpdated");
     },
     onRowRemoving(e) {
-      logEvent("RowRemoving", e);
+      submitEvent("RowRemoving", e);
     },
     onRowRemoved() {
-      logEvent("RowRemoved");
+      submitEvent("RowRemoved");
     },
     //onSaving(e) {
-    //    logEvent('Saving', e);
+    //    submitEvent('Saving', e);
     //},
     onSaved() {
-      logEvent("Saved");
+      submitEvent("Saved");
     },
     onEditCanceling() {
-      logEvent("EditCanceling");
+      submitEvent("EditCanceling");
     },
     onEditCanceled() {
-      logEvent("EditCanceled");
+      submitEvent("EditCanceled");
     },
     columns: [{
       dataField: 'ID',
@@ -106,7 +106,7 @@ function get_gridContainer() {
   //-----------------------------------------------------------------------------------------
 }
 //---------------------------------------------
-function logEvent(eventName, e) {
+function submitEvent(eventName, e) {
   //console.log(eventName);
   //console.log(e);
   
