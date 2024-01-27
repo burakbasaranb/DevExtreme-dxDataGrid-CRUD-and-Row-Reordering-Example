@@ -54,7 +54,6 @@ Please refer to [DevExpress Security Policy](https://github.com/DevExpress/Share
 
 - **`index.js`:** Main JavaScript file for the application. It may include the initialization of the dxDataGrid, event handlers, and any other logic required for the functionality of the application.
 
-
 ### Editing Forms
 
 The editing configuration in your code is as follows:
@@ -71,7 +70,9 @@ editing: {
 
 ### ReOrder
 
-The reordering configuration in your code is as follows:
+The rowDragging option in the DevExpress DataGrid widget allows you to enable and configure row reordering within the grid.
+
+Here's a basic example of how it can be used:
 
 
 ```javascript
@@ -98,3 +99,5 @@ rowDragging: {
       },
     },
 ```
+
+In this example, when a row is dragged and dropped, the onReorder function is called. This function updates the tasks array to reflect the new order of the rows and then refreshes the grid.
