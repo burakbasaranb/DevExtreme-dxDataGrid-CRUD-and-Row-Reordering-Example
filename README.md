@@ -1,11 +1,11 @@
-# DevExtreme dxDataGrid CRUD and Row Reordering Example
+# DevExtreme dxDataGrid CRUD Example
 
 This repository contains a complete example showcasing the use of DevExtreme's dxDataGrid for jQuery. The example covers the following key features:
 
-- Reordering rows with drag and drop functionality.
-- Adding new rows to the grid.
-- Updating existing rows.
-- Deleting rows from the grid.
+- **C**reate row
+- **R**eorder rows with drag and drop
+- **U**pdate row
+- **D**elete row
 
 ## Features
 
