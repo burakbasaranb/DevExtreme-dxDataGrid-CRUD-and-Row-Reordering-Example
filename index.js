@@ -1,3 +1,30 @@
+/*
+ * Author: Burak Basaran
+ * Email:  burak@burakbasaran.com
+ * Date:   2024-01-27
+ * 
+ * This is the main JavaScript file for a web page that displays a DevExpress DataGrid.
+ *
+ * The grid is configured with several features:
+ * - Editing in a popup mode with icons, allowing updating, deleting, and adding rows.
+ * - Borders around the grid cells.
+ * - A fixed height of 440 pixels.
+ * - A data source from the `tasks` array.
+ * - A unique key expression set to 'ID'.
+ * - Virtual scrolling mode for performance optimization with large data sets.
+ * - Disabled sorting.
+ * - Enabled row reordering. When a row is reordered, the `onReorder` function is called. This function:
+ *   - Finds the new and old positions of the reordered row in the `tasks` array.
+ *   - Updates the `tasks` array to reflect the new order.
+ *   - Creates a new array `newOrder` of the reordered IDs.
+ *   - Sends this new order to the server using `setRowOrders(newOrder.join())`.
+ *   - Refreshes the grid.
+ *
+ * The `onEditingStart` function is also defined, but its implementation is not included in this excerpt.
+ *
+ * The grid is initialized when the `get_gridContainer` function is called.
+ */
+
 // define locale
 DevExpress.localization.locale("en-EN");
 //------------------------------------------------------------------------------------------
