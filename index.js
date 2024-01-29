@@ -16,11 +16,10 @@
  * - Enabled row reordering. When a row is reordered, the `onReorder` function is called. This function:
  *   - Finds the new and old positions of the reordered row in the `tasks` array.
  *   - Updates the `tasks` array to reflect the new order.
+ *   - Refreshes the grid.
  *   - Creates a new array `newOrder` of the reordered IDs.
  *   - Sends this new order to the server using `setRowOrders(newOrder.join())`.
- *   - Refreshes the grid.
  *
- * The `onEditingStart` function is also defined, but its implementation is not included in this excerpt.
  *
  * The grid is initialized when the `get_gridContainer` function is called.
  */
