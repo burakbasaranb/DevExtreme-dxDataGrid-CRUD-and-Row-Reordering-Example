@@ -86,7 +86,12 @@ rowDragging: {
         tasks.splice(fromIndex, 1);
         tasks.splice(toIndex, 0, e.itemData);
 
+        // 1. refresh the list with new order
+        e.component.refresh();
+        
         //-----------------------------------------
+        // 2. Then send the new order to the server
+        
         // Create IDs array
         var newOrder = [];
         for (var i = 0; i < tasks.length; i++) {
@@ -95,7 +100,6 @@ rowDragging: {
         //send IDs to server
         setRowOrders(newOrder.join());
         //-----------------------------------------
-        e.component.refresh();
       },
     },
 ```
